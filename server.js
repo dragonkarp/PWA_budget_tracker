@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://geodudedude:password123!@cluster0.ewump.mongodb.net/budget?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://geodudedude:PizzaShop123@cluster0.ewump.mongodb.net/budget?retryWrites=true&w=majority", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
