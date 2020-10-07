@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://geodudedude:PizzaShop123@cluster0.ewump.mongodb.net/budget?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGODB_URI || "http://localhost:3000/budget", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
@@ -28,3 +28,5 @@ app.use(require("./routes/api.js"));
 app.listen(PORT, () => {
   console.log(`App running on port ${PORT}!`);
 });
+
+// mongodb+srv://geodudedude:PizzaShop123@cluster0.ewump.mongodb.net/budget?retryWrites=true&w=majority
